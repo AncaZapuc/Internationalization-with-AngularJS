@@ -1,0 +1,19 @@
+﻿
+<!DOCTYPE html>
+
+<html ng-app="app" ng-controller="AppCtrl">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title ng-bind="locale['appTitle']">Bootstrapping</title>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/angular-sanitize.js"></script>
+    <script src="/Scripts/i18n/angular-locale_en-au.js"></script>
+    <script src="/Scripts/app.js"></script>
+</head>
+<body>
+    <p>Change language: <a ng-click="changeLanguage('en')">English (International)</a> | <a ng-click="changeLanguage('de')">German</a> | <a ng-click="changeLanguage('zh')">Chinese</a></p>
+    <p>Page: <a ng-click="go('home')">Home</a> | <a ng-click="go('two')">Two</a> | <a ng-click="go('three')">Three</a></p>
+
+    <div ng-view></div>
+</body>
+</html>
